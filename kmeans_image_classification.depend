@@ -1,0 +1,166 @@
+# depslib dependency file v1.0
+1523090260 source:/home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/main.cpp
+	<fstream>
+	<iostream>
+	<algorithm>
+	<math.h>
+	"CImgImage.h"
+	<vector>
+	"LinkList.h"
+	"TypeTree.h"
+	"ImageClassification.h"
+
+1520831290 /home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/CImg.h
+	<cstdio>
+	<cstdlib>
+	<cstdarg>
+	<cstring>
+	<cmath>
+	<cfloat>
+	<climits>
+	<ctime>
+	<exception>
+	<algorithm>
+	<stdio.h>
+	<sys/types.h>
+	<sys/time.h>
+	<sys/stat.h>
+	<unistd.h>
+	<dirent.h>
+	<fnmatch.h>
+	<windows.h>
+	<shlobj.h>
+	<process.h>
+	<io.h>
+	<initializer_list>
+	<utility>
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/keysym.h>
+	<pthread.h>
+	<sys/ipc.h>
+	<sys/shm.h>
+	<X11/extensions/XShm.h>
+	<X11/extensions/Xrandr.h>
+	<omp.h>
+	<cstddef>
+	"cv.h"
+	"highgui.h"
+	"png.h"
+	"jpeglib.h"
+	"setjmp.h"
+	"tiffio.h"
+	"minc_io_simple_volume.h"
+	"minc_1_simple.h"
+	"minc_1_simple_rw.h"
+	"zlib.h"
+	"curl/curl.h"
+	"Magick++.h"
+	"fftw3.h"
+	"Board.h"
+	"ImfRgbaFile.h"
+	"ImfInputFile.h"
+	"ImfChannelList.h"
+	"ImfMatrixAttribute.h"
+	"ImfArray.h"
+	"tinyexr.h"
+	"CImg.h"
+	<stdint.h>
+
+1521821862 source:/home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/src/IImage.cpp
+	"IImage.h"
+
+1521823205 /home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/include/IImage.h
+
+1522411269 /home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/include/Image.h
+
+1521957693 source:/home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/src/Image.cpp
+	"Image.h"
+
+1520831290 /home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/include/CImg.h
+	<cstdio>
+	<cstdlib>
+	<cstdarg>
+	<cstring>
+	<cmath>
+	<cfloat>
+	<climits>
+	<ctime>
+	<exception>
+	<algorithm>
+	<stdio.h>
+	<sys/types.h>
+	<sys/time.h>
+	<sys/stat.h>
+	<unistd.h>
+	<dirent.h>
+	<fnmatch.h>
+	<windows.h>
+	<shlobj.h>
+	<process.h>
+	<io.h>
+	<initializer_list>
+	<utility>
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/keysym.h>
+	<pthread.h>
+	<sys/ipc.h>
+	<sys/shm.h>
+	<X11/extensions/XShm.h>
+	<X11/extensions/Xrandr.h>
+	<omp.h>
+	<cstddef>
+	"cv.h"
+	"highgui.h"
+	"png.h"
+	"jpeglib.h"
+	"setjmp.h"
+	"tiffio.h"
+	"minc_io_simple_volume.h"
+	"minc_1_simple.h"
+	"minc_1_simple_rw.h"
+	"zlib.h"
+	"curl/curl.h"
+	"Magick++.h"
+	"fftw3.h"
+	"Board.h"
+	"ImfRgbaFile.h"
+	"ImfInputFile.h"
+	"ImfChannelList.h"
+	"ImfMatrixAttribute.h"
+	"ImfArray.h"
+	"tinyexr.h"
+	"CImg.h"
+	<stdint.h>
+
+1522482227 /home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/include/CImgImage.h
+	"Image.h"
+	"CImg.h"
+
+1522501082 source:/home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/src/CImgImage.cpp
+	"CImgImage.h"
+	"ctype.h"
+	"CImg.h"
+	<iostream>
+
+1522163483 source:/home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/src/LinkList.cpp
+	"LinkList.h"
+
+1522187566 /home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/include/LinkList.h
+
+1522401299 source:/home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/src/ImageClassification.cpp
+	"ImageClassification.h"
+
+1522501588 /home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/include/ImageClassification.h
+	"Image.h"
+	<string.h>
+	<iostream>
+
+1522479877 /home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/include/TypeTree.h
+	"LinkList.h"
+	<vector>
+
+1522481325 source:/home/splab-note/Project/PatternRecognition/KMeans/kmeans_image_classification/src/TypeTree.cpp
+	"TypeTree.h"
+

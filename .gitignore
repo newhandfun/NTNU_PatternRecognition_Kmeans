@@ -1,1 +1,3 @@
-ObjectDataset/ 
+ObjectDataset/
+bin/
+obj/ 
