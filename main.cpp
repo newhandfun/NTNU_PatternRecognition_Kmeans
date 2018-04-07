@@ -244,6 +244,7 @@ float kmeans(vector<vector<int>> &type_index,int** feature_vectors,const unsigne
             cout<<"this type have "<<type_index[type].size()<<" data,we will average their feature value to be centroid."<<endl;
         }
 
+
 //        cout<<"Get centroid by color:[";
         for(unsigned int index_color=0;index_color<256;index_color++){
             unsigned int value_sum = 0;
