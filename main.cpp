@@ -180,6 +180,8 @@ float verifyCorrection(vector<vector<int>> &type_index,const unsigned int length
     return rate_correction;
 }
 
+//float (*FindFeatureDiff)(const Image* image_1,const Image image_2);
+
 float kmeans(vector<vector<int>> &type_index,int** feature_vectors,const unsigned int type_number
     ,const unsigned int orgin_data_size,vector<int*> &centroids,float error_allow){
 
@@ -225,14 +227,26 @@ float kmeans(vector<vector<int>> &type_index,int** feature_vectors,const unsigne
         }
         //if no item in old type,add an item in this type.
         if(type_index[type].size()==0){
-            cout<<"this type is not data.we will indicate one to be centroid. select index : ";
 
             unsigned int type_re_index = 0;
 
             //find a non-used image,then select it to be centoriods.
-            type_re_index = usable_index[rand()%usable_index.size()];
+//            type_re_index = usable_index[rand()%usable_index.size()];
+
+            //find a none-used image that has much difference with other centroids.
+            unsigned int times_test = 0;
+            unsigned int times_max_test = orgin_data_size/type_number ;
+            do{
+                type_re_index = usable_index[rand()%usable_index.size()];
+                if(type==0)break;
+            }while(
+                findGrayFeatureDiff(feature_vectors[type_re_index],centroids[type-1])<4000   ||
+                times_test++ < times_max_test
+            );
+
             auto iter_usable_index = find(usable_index.begin(),usable_index.end(),type_re_index);
 
+            cout<<"this type is not data.we will indicate one to be centroid. select index : ";
             cout<<type_re_index<<endl;
 
             //sign used item.
@@ -248,7 +262,8 @@ float kmeans(vector<vector<int>> &type_index,int** feature_vectors,const unsigne
         for(unsigned int index_color=0;index_color<256;index_color++){
             unsigned int value_sum = 0;
             for(unsigned int index_type_item=0;index_type_item<type_index[type].size();index_type_item++){
-                value_sum += feature_vectors[type_index[type][index_type_item]][index_color];
+                unsigned int index_item = type_index[type][index_type_item];
+                value_sum += feature_vectors[index_item][index_color];
 //                cout<<feature_vectors[index_type_item][index_color]<<",";
             }
             centroids[type][index_color] = value_sum / type_index[type].size();
@@ -282,7 +297,7 @@ float kmeans(vector<vector<int>> &type_index,int** feature_vectors,const unsigne
         is_used[index_img] = true;
     }
 
-    for(int i=0;i<type_index.size();i++){
+    for(unsigned int i=0;i<type_index.size();i++){
         cout<<"type "<<i<<" has "<<type_index[i].size()<<" items."<<endl;
     }
 
